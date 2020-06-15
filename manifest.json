@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Domain Redirector",
+  "version": "0.8",
+  "description": "Redirect web requests based on user settings.",
+  "icons": { 
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon128.png"
+  },
+  "background":
+    {
+      "scripts": ["jquery-3.5.0.min.js", "background.js"]
+    },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "<all_urls>"
+  ]
+}
