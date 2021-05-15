@@ -1,7 +1,5 @@
 $(document).ready(function() {
     var redirects = new Array();
-    redirects[0] = {original: "www.reddit.com", redirect: "old.reddit.com"};
-    redirects[1] = {original: "en.m.wikipedia.org", redirect: "en.wikipedia.org"};
 
     chrome.storage.local.set({redirects: redirects});
 
